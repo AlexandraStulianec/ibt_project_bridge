@@ -29,7 +29,7 @@ Before you begin, ensure you have the following installed:
 3. **Foundry (Forge & Anvil)**
 4. **MetaMask** (browser extension)
 5. **Sui Wallet** (browser extension)
-6. **VSCode (to write and edit code)
+6. **VSCode** (to write and edit code)
 ---
 
 ## Installation
