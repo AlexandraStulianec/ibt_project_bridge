@@ -98,7 +98,7 @@ npm install
 
 ### 3. Install Ethereum contract dependencies:
 ```bash
-cd ../ethereum-contract
+cd ../ethereum
 forge install
 ```
 
@@ -120,7 +120,7 @@ anvil
 
 #### 2. In a new terminal, deploy the contract:
 ```bash
-cd ethereum-contract
+cd ethereum
 forge create --rpc-url http://localhost:8545 --private-key <PRIVATE_KEY> src/IBToken.sol:IBToken
 ```
 > **Note**: Replace `<PRIVATE_KEY>` with your Anvil private key.
@@ -134,7 +134,7 @@ forge create --rpc-url http://localhost:8545 --private-key <PRIVATE_KEY> src/IBT
 #### 1. Deploy the Sui contract to the local network:
 ```bash
 cd sui-contract
-sui client publish --gas-budget 300000000
+sui client publish --gas-budget 100000000
 ```
 
 #### 2. Update the following constants in `frontend/src/contracts/sui.ts`:
@@ -154,5 +154,5 @@ npm run dev
 
 ### 3. Connect your wallets:
    - **MetaMask**: Connect to Anvil (localhost:8545)
-   - **Sui Wallet**: Connect to the local Sui network
+   - **Sui Wallet**: Connect to the local Sui network with sui start
 
