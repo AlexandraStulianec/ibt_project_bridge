@@ -13,8 +13,8 @@ The bridge works by burning tokens on the source chain and minting them on the d
   - [OpenZeppelin](https://openzeppelin.com/): Library for smart contract development using the ERC20 token and Ownable.
 
 - **Frontend**:
-  - [Vite](https://vitejs.dev/): A fast build tool for modern web applications.
-  - [React](https://reactjs.org/): A JavaScript library for  user interfaces.
+  - [Vite](https://vitejs.dev/): A build tool for modern web applications.
+  - [React](https://reactjs.org/): A JavaScript library for user interfaces.
   - [TypeScript](https://www.typescriptlang.org/): A typed superset of JavaScript.
   - [ethers.js](https://docs.ethers.io/): A library for interacting with Ethereum.
   - [@mysten/dapp-kit](https://sdk.mystenlabs.com/dapp-kit): A toolkit for building Sui dApps.
