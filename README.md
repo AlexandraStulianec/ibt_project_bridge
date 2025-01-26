@@ -1,6 +1,6 @@
 # Bridge Between Ethereum and Sui
 
-This project implements a bridge between **Ethereum** and **Sui** blockchains, allowing users to transfer IBT (Inter Blockchain Token) tokens between the two chains. The bridge works by burning tokens on the source chain and minting them on the destination chain.
+This project implements a bridge between **Ethereum** and **Sui** blockchains, allowing users to transfer IBT (Intro Blockchain Token) tokens between the two chains. The bridge works by burning tokens on the source chain and minting them on the destination chain.
 
 ---
 
