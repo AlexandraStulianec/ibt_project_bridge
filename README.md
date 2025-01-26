@@ -1,19 +1,20 @@
 # Bridge Between Ethereum and Sui
 
-This project implements a bridge between **Ethereum** and **Sui** blockchains, allowing users to transfer IBT tokens between the two chains. The bridge works by burning tokens on the source chain and minting them on the destination chain.
+This project implements a bridge between **Ethereum** and **Sui** blockchains, allowing users to transfer IBT tokens between the two chains. 
+The bridge works by burning tokens on the source chain and minting them on the destination chain.
 
 ---
 
 ## Technologies Used
 
 - **Blockchain Frameworks**:
-  - [Sui](https://sui.io/): A high-performance blockchain platform.
+  - [Sui](https://sui.io/): A blockchain platform.
   - [Foundry (Forge)](https://book.getfoundry.sh/): A toolkit for Ethereum development.
-  - [OpenZeppelin](https://openzeppelin.com/): Library for secure smart contract development.
+  - [OpenZeppelin](https://openzeppelin.com/): Library for smart contract development using the ERC20 token and Ownable.
 
 - **Frontend**:
   - [Vite](https://vitejs.dev/): A fast build tool for modern web applications.
-  - [React](https://reactjs.org/): A JavaScript library for building user interfaces.
+  - [React](https://reactjs.org/): A JavaScript library for  user interfaces.
   - [TypeScript](https://www.typescriptlang.org/): A typed superset of JavaScript.
   - [ethers.js](https://docs.ethers.io/): A library for interacting with Ethereum.
   - [@mysten/dapp-kit](https://sdk.mystenlabs.com/dapp-kit): A toolkit for building Sui dApps.
@@ -100,11 +101,12 @@ npm install
 ```bash
 cd ../ethereum
 forge install
+forge build
 ```
 
 ### 4. Build the Sui contract:
 ```bash
-cd ../sui-contract
+cd ../sui/ibt_token
 sui move build
 ```
 ---
@@ -121,9 +123,9 @@ anvil
 #### 2. In a new terminal, deploy the contract:
 ```bash
 cd ethereum
-forge create --rpc-url http://localhost:8545 --private-key <PRIVATE_KEY> src/IBToken.sol:IBToken
+forge create <NAME_OF_THE_FILE> --private-key <PRIVATE_KEY> --broadcast
 ```
-> **Note**: Replace `<PRIVATE_KEY>` with your Anvil private key.
+> **Note**: Replace `<PRIVATE_KEY>` and `<NAME_OF_THE_FILE>` with your Anvil private key and file name.
 
 #### 3. Update the contract address in the frontend configuration:
    - Open `frontend/src/contracts/ethereum.ts`
@@ -133,7 +135,7 @@ forge create --rpc-url http://localhost:8545 --private-key <PRIVATE_KEY> src/IBT
 
 #### 1. Deploy the Sui contract to the local network:
 ```bash
-cd sui-contract
+cd sui/ibt_token
 sui client publish --gas-budget 100000000
 ```
 
@@ -155,4 +157,4 @@ npm run dev
 ### 3. Connect your wallets:
    - **MetaMask**: Connect to Anvil (localhost:8545)
    - **Sui Wallet**: Connect to the local Sui network with sui start
-
+> **Note**: Connect to the wallets after starting the servers.
