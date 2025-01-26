@@ -1,6 +1,6 @@
 # Bridge Between Ethereum and Sui
 
-This project implements a bridge between **Ethereum** and **Sui** blockchains, allowing users to transfer IBT (Intro Blockchain Token) tokens between the two chains. The bridge works by burning tokens on the source chain and minting them on the destination chain.
+This project implements a bridge between **Ethereum** and **Sui** blockchains, allowing users to transfer IBT tokens between the two chains. The bridge works by burning tokens on the source chain and minting them on the destination chain.
 
 ---
 
@@ -26,10 +26,10 @@ Before you begin, ensure you have the following installed:
 
 1. **Node.js** (v18 or higher)
 2. **Sui CLI**
-3. **Foundry (Forge)**
+3. **Foundry (Forge & Anvil)**
 4. **MetaMask** (browser extension)
 5. **Sui Wallet** (browser extension)
-
+6. **VSCode (to write and edit code)
 ---
 
 ## Installation
