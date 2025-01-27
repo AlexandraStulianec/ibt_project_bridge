@@ -85,6 +85,8 @@ Before you begin, ensure you have the following installed:
 
 ## Setup Instructions
 
+> **Note**: Because of some issues with the contracts/ethereum I put a zip file with all the folders and files for the project.
+
 ### 1. Clone the repository:
 ```bash
 git clone https://github.com/your-username/your-repo-name.git
